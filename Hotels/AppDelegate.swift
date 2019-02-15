@@ -12,10 +12,30 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var appCoordinator:AppCoordinator?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        
+
+        
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        let appCoordinator = AppCoordinator(window: window)
+        
+        appCoordinator.start()
+        
+        self.window = window
+        self.appCoordinator = appCoordinator
+        
         // Override point for customization after application launch.
+        
+        
+        // status bar apperance
+        UIApplication.statusBarBackgroundColor = UIColor(red: 88/255, green: 69/255, blue: 142/255, alpha: 1)
+        application.statusBarStyle = .lightContent 
+
+        
+        
         return true
     }
 
@@ -44,3 +64,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+
+extension UIApplication {
+    class var statusBarBackgroundColor: UIColor? {
+        get {
+            return (shared.value(forKey: "statusBar") as? UIView)?.backgroundColor
+        } set {
+            (shared.value(forKey: "statusBar") as? UIView)?.backgroundColor = newValue
+        }
+    }
+}

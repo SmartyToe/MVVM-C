@@ -129,7 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				291FE5F522031D5600CAF0D8 /* Podfile */,
-				291FE59E2202DD4400CAF0D8 /* Hotels */,
+				291FE59E2202DD4400CAF0D8 /* example */,
 				291FE5B32202DD4700CAF0D8 /* HotelsTests */,
 				291FE5BE2202DD4700CAF0D8 /* HotelsUITests */,
 				291FE59D2202DD4400CAF0D8 /* Products */,
@@ -148,7 +148,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		291FE59E2202DD4400CAF0D8 /* Hotels */ = {
+		291FE59E2202DD4400CAF0D8 /* example */ = {
 			isa = PBXGroup;
 			children = (
 				291FE5E72202F15A00CAF0D8 /* View Protocols */,
@@ -163,7 +163,7 @@
 				291FE5A82202DD4700CAF0D8 /* LaunchScreen.storyboard */,
 				291FE5AB2202DD4700CAF0D8 /* Info.plist */,
 			);
-			path = Hotels;
+			path = example;
 			sourceTree = "<group>";
 		};
 		291FE5B32202DD4700CAF0D8 /* HotelsTests */ = {
